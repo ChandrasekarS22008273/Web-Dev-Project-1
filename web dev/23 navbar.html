@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        .navbar{
+            background-color: rgb(105, 105, 247);
+            border: 2px solid grey;
+            border-radius: 15px;
+
+        }
+
+        .navbar ul{
+           overflow: auto;
+        }
+
+        .navbar li{
+            float:left;
+            list-style: none;
+            padding: 3px 10px;
+            font-weight: bold;
+            border: 2px solid rgb(24, 24, 24);
+            margin:0px 30px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            /* padding: 3px 3px; */
+        }
+
+        .navbar li:hover{
+            background-color:rgb(152, 40, 231);
+            cursor: pointer;
+        }
+
+        .search{
+            float: right;
+            padding: 5px 20px;
+            color: black;
+            font-size: 20px;
+            /* cursor: pointer; */
+        }
+
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 200px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <div class="search">
+                    <label for="search">Search:</label>
+                    <input type="text" id="search" placeholder="How do we help you?">   
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

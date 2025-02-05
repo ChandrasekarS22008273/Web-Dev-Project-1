@@ -1,0 +1,11 @@
+body{
+    font-size: 30px;
+    font-style: italic;
+    background-color: black;
+    color: rgb(248, 248, 248);
+    color: purp;
+}
+/* 4th value in (r,g,b,alpha)
+alpha is the transparecy of color...0 opa
+
+Named color<hex code= rgb code  order of performance*/

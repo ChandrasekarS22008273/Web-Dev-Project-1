@@ -1,0 +1,24 @@
+<html>
+<head>
+<title> Control Statements</title></head>
+<body>
+<h1><p> Control Statements.</p> </h1>
+<script>
+var name;
+var now = new Date();
+var hour = now.getHours();
+name = window.prompt( "Enter your name" );
+document.writeln(now +"<br><h2>");
+if ( hour < 12 )
+document.writeln( "Good Morning, " );
+if ( hour >= 12 ) {
+hour = hour - 12;
+if ( hour < 6 )
+document.writeln( "Good Afternoon, " );
+if ( hour >= 6 )
+document.writeln( "Good Evening, " );
+}
+document.writeln("<br>Welcome " + name +"<h2>" );
+</script>
+</body>
+</html>

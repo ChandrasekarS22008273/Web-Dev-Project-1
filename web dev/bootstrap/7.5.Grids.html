@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Bootstrap Introduction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <style>
+      .box-syle{
+          border: 2px  solid black;
+      }
+  </style>  
+</head>
+  <body>
+      <div class="container">
+          <h2>2 columns</h2>
+          <div class="col-xs-1 col-sm-2 col-md-10  col-lg-6 box-syle">Column 1</div>
+          <div class="col-xs-1 col-sm-10 col-md-2 col-lg-6 box-syle">Column 2</div>
+          <!-- here xs divisions(1,1) doesn't lead to 12 so it displayed same as sm -->
+          <!-- if we dont mention for sm md and lg then implicitly xs value is taken for these three also -->
+
+      </div>
+  </body>
+</html>
+
+<!-- needs network connection to work -->

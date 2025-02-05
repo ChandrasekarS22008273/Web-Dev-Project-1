@@ -1,0 +1,15 @@
+div{
+    font-size: 15px;
+    margin-right: 20px;
+}
+.box{
+    display: -moz-inline-grid;
+
+    width: 50%;
+    
+    float: right;
+    float:left;
+}
+
+/*if multiple declarations present in the CSS, the last one will
+be executed and others are overwritten*/

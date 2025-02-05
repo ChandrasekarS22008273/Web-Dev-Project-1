@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background and Borders</title>
+    <style>
+        #first{
+            background-color: grey;
+            border:10px red solid ;
+            border-radius: 8px;
+        }
+
+        /* other border styles
+        1.dashed
+        2.hidden
+        3.solid
+        4.double
+        5.dotted */
+
+        #second{
+            background-color: grey;
+            border:10px solid blue;
+            border-left: red 10px solid;
+            /* like this you can specify for border right border left bottom and top */
+            /* also you ccan assign a specific border radius for top bottom top and down */
+            border-top-left-radius: 10px;
+            /* just like this */
+
+        }
+
+        #third{
+            /* line-height: 0em; */
+            font-size:21px;
+            background-color: grey;
+            height: 1100px;
+            width : 900px;
+            
+            border:10px red solid ;
+            /* border-width:10px;
+            border-style:solid;
+            border-color: red; */
+            border-radius: 8px;
+            background-image: url("https://media.istockphoto.com/photos/butterflies-picture-id1201252148");
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* you can also write as 122px 130px 
+            This would simply move your imsage 122 px away from left and 130px away from right */
+        }
+    </style>
+</head>
+<body>
+    
+   <p id= "first">this is first paragraph</p>
+
+   <p id="second">this is second para</p>
+
+   <p id= "third">This is third para</p>
+</body>
+</html>

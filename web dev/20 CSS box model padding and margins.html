@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model,padding and Margins</title>
+    <style>
+
+        body{
+            background-color: blueviolet;
+        }
+        .c{
+            /* box model mein kya kya hote hain yeh dekhte hain 
+            ek hota hain apna padding fir aata hain apna border fir apna margin
+            sabki apnni apni width aur doosri saari properties jo hoti hain wo rehti hain */
+            /* padding-bottom:9px;
+            padding-left:9px;
+            padding-right:9px;
+            padding-top:9px;
+
+            same margin ke saaath bhi kar sakte hain.lekin apne paas shorthand ke tarike bhi hain wo dekhte hain
+
+            margin : top right bottom left;
+            padding: top right bottom left;
+                        
+            padding: top/bottom left/right;
+            margin: top/bottom left/right; */
+            /* line-height: 10em; */
+            background-color: blue;
+            border:black 10px solid;
+            padding: 20px 30px;
+            margin: 4px 5px;
+            border-radius:6px;
+            width:433px;
+
+            /* ab yahan kya hota hain jab bhi hum koi change karte hain maanlo padding mein yaa maarginmein yaa border main to kua hoga width bhi badlegi to iskeliye hum use karte hain ek aur property  */
+
+            box-sizing:border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <p class= "c">para1</p>
+    <p class= "c">para2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum mollitia, illo ducimus veritatis vero recusandae repellat quibusdam. Quibusdam voluptas, architecto, vitae nihil ipsa labore tenetur expedita ad, autem maxime sit consequuntur ducimus.</p>
+    <p class= "c">para3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae eum repellendus maxime ipsum sint aut, accusamus totam harum ea quas ratione dolore nisi, blanditiis possimus assumenda non sunt rem.</p>
+</body>
+</html>

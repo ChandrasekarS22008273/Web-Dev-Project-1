@@ -1,0 +1,51 @@
+div{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    border-radius: 30px;
+    overflow:hidden;
+    /* display: inline-block; */
+    
+}
+a{
+    margin-bottom: 0px ;
+}
+li{
+   list-style: "";
+   float: left;
+   padding: 10px 30px;
+   margin-top: 15px;
+}
+.buttons
+{
+    
+    /* display: inline-block; */
+    border: solid white;
+    color: rgb(241, 179, 241);
+    margin-top: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+    /* padding: 10px; */
+
+}
+a:hover{
+    /* color: red; */
+    background-color: red;
+}
+#searchbox{
+    float: right;
+    padding: 2px 30px;
+    margin: 25px;
+    margin-left: 30px;
+}
+p{
+    font-size: 20px;
+    margin: 30px;
+    color: seashell;
+    float: right;
+    margin-right: 0px;
+}
+#logo{
+    margin-bottom: 1000px;
+}

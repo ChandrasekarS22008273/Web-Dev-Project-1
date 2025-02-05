@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .container{
+            width:900px;
+            border:4px red solid;
+            background-color: rgb(218 173 186);
+            margin: 50px auto ;
+        }
+
+        .item{
+            border:4px solid black;
+            background-color: #bac0de;
+            width:250px;
+            /* height:96px; */
+            margin:30px;/* 30px = 5%  */
+            /* margin:auto; */
+            padding:10px 10px;
+        }
+
+
+        #fruitpara{
+            float:left;
+            width:40%;
+        }
+
+        #computer{
+            float: right;
+            width: 40%;
+        }
+
+        #stationary{
+            clear: right;
+            width:90%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div id="fruit" class="container">
+            <div>
+                <p id="fruitpara" class="item">
+                    Fruit Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem nesciunt, assumenda fuga, magnam unde veniam enim quo esse perspiciatis accusamus, suscipit dolore sunt nemo possimus? Quae fuga dolore harum dolor fugit.
+                </p>
+            </div>
+
+            <div>
+                <p id="computer" class="item">
+                    Computer Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas nam impedit at est quis aut, tenetur nulla praesentium eaque suscipit libero quisquam fugiat blanditiis natus dolore laborum fuga, alias officiis.
+                </p>
+            </div>
+            <div>
+                <p id="stationary" class="item">
+                    Stationary Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fugit sit ad, commodi nisi qui cum? Provident excepturi facilis voluptates delectus officia deserunt eligendi nam sapiente totam aspernatur, voluptas ex!
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

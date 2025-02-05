@@ -1,0 +1,54 @@
+<!--Div is used to have sperate divisions inside page
+ This also be done using table tag
+
+If we have p<> in css and we have 5 p tags in our HTML file and we want only one to follow the sytling...then we add id to the one which we wanted 
+to be identified by CSS like
+
+<p id="paragrah 1"> content  </p>
+
+in CSS it is implemented as 
+p{
+    features
+}
+#paragraph1
+{
+    additional feature
+}
+.
+.
+.
+paragraphn
+{
+ additional features
+}
+
+just like Test case
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Div tag</title>
+    <link rel="stylesheet" href="8.0 divisions.css">
+</head>
+<body>
+    <h3 >A html and CSS code to implement difference between 2 types of grammars</h3>
+<div id="left">
+    <h3 id="subheading1">Ambigious grammar</h3>
+    <ul>
+   <!-- <li>A context free grammar is an ambigious grammar if there exists more than
+        one derivation tree or parse tree</li>-->
+    <li>ambigious grammar contains ambiguity</li>
+    <li>LR parsing can't be done</li>
+    </ul>
+</div>   
+<div id="right">
+    <h3 id="subheading2">Unambigious grammar</h3>
+    <ul>
+    <!--<li>A context free grammar is an ambigious grammar if there exists only
+        one parse tree</li>-->
+    <li>Unambigious grammar doesn't contain ambiguity</li>
+    <li>LR parsing can be done</li>
+    </ul>
+</div>  
+</body>
+</html>

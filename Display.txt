@@ -1,0 +1,10 @@
+every tag have display property
+either inline or block
+
+default
+div-block
+span-inline
+img-inline
+p-block 
+
+span p are same except display property

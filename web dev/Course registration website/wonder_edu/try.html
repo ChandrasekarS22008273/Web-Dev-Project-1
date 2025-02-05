@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wonder Edu</title>
+    <link rel="shortcut icon" href="logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 15, 2022 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <script>
+        function validateForm(){
+        var pw = document.forms["f1"]["pw"];
+        var cpw = document.forms["f1"]["cpw"];
+        if(pw.value == cpw.value)
+        return false;
+        else 
+        {
+        windows.alert("re-enter the password");
+        pw.focus();
+        return true
+        }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="part1">
+        <ul type="none">
+            <li><a href="#"><img src="logo.png" alt="logo" height="100px" width="170px"></a></li>
+            <div class="right">
+                <li><a href="#part2">Register</a></li>
+                <li><a href="#part3">Details</a></li>
+                <li><select>
+                        <option value="" disabled selected hidden>Date</option>
+                        <option>opt 1</option>
+                        <option>opt 2</option>
+                    </select></li>
+                <li><a>Contact</a></li>
+                <li><a href="https://www.facebook.com/"><img src="fb.png" height="20px" width="20px" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/signup"><img src="in.ico" height="20px" width="25px" alt=""></a>
+                </li>
+            </div>
+        </ul>
+
+        <div id="tag">Signup soon...</div>
+
+        <p id="demo"></p>
+
+        <h2 id="c"> Personality Development Course</h2>
+        <p id="d">How you carry yourself in the society determines how much you are appreciated, admired and
+            respected.<br>Are you ready to create a public image for yourself and improve your skills?</p>
+        <div id="button1"><a href="#part2"><button id="b1" onclick="#part2">Register</button></a>
+            <a href="about.html"><button id="b2">Discover</button></a>
+        </div>
+        <center>
+            <img src="form1.jpg" id="img1" alt="" height="500px" width="800px">
+        </center>
+    </div>
+    <div id="part2">
+        <div style="display:table-row; height: 400px;">
+            <div class="info">
+                <h1 style="padding-bottom: 10px; padding-left: ; ">Register Using this form</h1>
+                <p style="padding-left:60px;font-size: larger; ">Are you struggling when it comes to public speaking?
+                    <br>&nbsp; &nbsp;&nbsp;Do you want your thoughts to be impressive?</p>
+                <h3 style="padding: 50px 80px; font-family: cursive;font-weight: bold;">kill the fear and be the best
+                    version of you </h3>
+
+            </div>
+            <div style="padding-bottom: 0px;" class="f">
+                <form name="f1" method="post" action="register.php" onsubmit="return validateForm()">
+                    <input type="text" name="name" id="" placeholder="Full Name" required>
+                    <input type="email" name="email" id="" placeholder="Email Address" required>
+                    <input type="number" name="number" id="" placeholder="Phone Number" required>
+                    <input type="text" name="user_name" id="" placeholder="User Name" required>
+
+                    <input type="password" name="pw" id="" placeholder="Password" required>
+                    <input type="password" name="cpw" id="" placeholder="Confirm password" required>
+
+                    <br><input type="checkbox" style="display:inline;" name="policy" value="1" required>I accept all the <a
+                        href="#">terms and conditions</a>
+                    <br>
+                    <input type="submit" id="reg" value="Register"></button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="c1.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval and Set Timeout</title>
+</head>
+<body>
+    Time Now is: <span id="time"></span>
+</body>
+
+
+
+
+<script>
+    function greet(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+
+
+    a = setInterval(greet, 1000);
+    // clearInterval(a);
+</script>
+</html>

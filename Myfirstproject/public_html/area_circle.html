@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function calculatearea()
+            {
+                const pi=3.14;
+                r=f1.r.value;
+                ans=3.14*r*r;
+                                //document.write("<form>Ans:<input type="+ans+"</form>");
+                
+                confirm(ans);
+                //document.write("<form>Ans:<input type="+ans+"</form>");
+                f2.a.value=ans;
+                //return ans;
+            }
+            function confirmed(){
+                confirm("Are u sure?");
+            }
+            function executeME()
+            {
+                document.write("you clicked a para!");
+            }
+            </script>
+    </head>
+    <body>
+        <form name="f1">
+            enter r:
+            <input type="text" name="r" value="0">
+            <input type="button" value="Calculate" onclick="calculatearea()"><!-- comment -->
+            <input type="button" value="refresh" onclick="confirmed()>
+            <input type="text" name="a" value="0">
+        </form>
+            <p onclick="executeMe();">Para says !!!</p>
+        <h1>END</h1>
+    </body>
+</html>

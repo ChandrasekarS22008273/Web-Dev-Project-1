@@ -1,0 +1,51 @@
+<head><title>calculator</title>
+
+<script>
+
+function val(a)
+
+{
+
+f1.t1.value = f1.t1.value+a;
+
+}
+
+function ans()
+
+{
+
+f1.t1.value = eval(f1.t1.value);
+
+}
+
+function sal()
+
+{
+
+f1.t1.value = Math.sin(f1.t1.value);
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name = "f1">
+
+<input type="text" name="t1" value ="0"><br>
+
+<input type="button" name="t2" value ="1" onclick="val(this.value)">
+
+<input type="button" name="t3" value ="2" onclick="val(this.value)"><br>
+
+<input type="button" name="t4" value ="+" onclick="val(this.value)">
+
+<input type="button" name="t6" value ="Sin" onclick="sal(this.value)">
+
+<input type="button" name="t5" value ="=" onclick="ans()">
+
+<input type="reset" value ="cancel">
+
+</body>

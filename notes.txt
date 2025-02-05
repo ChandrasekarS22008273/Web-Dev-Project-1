@@ -1,0 +1,52 @@
+Doctype stands for Document Type Declaration.
+ It informs the web browser about the type and version of
+ HTML used in building the web document. This helps 
+the browser to handle and load it properly. While the 
+HTML syntax for this statement is somewhat simple, 
+you must note each version of HTML has its own rules
+
+
+in style tag 
+  font color is mentioned by color:color_name;
+
+comment in HTML file 
+       <!-    -->
+comment in CSS file
+       /*       */
+
+Link tag
+The <link> element is an empty element, it contains
+ attributes only
+Rel attribute in link tag
+   It defines relationship between the current doc and linked
+document
+<link rel=value>
+https://www.w3schools.com/tags/att_link_rel.asp
+all values of rel is given in this link
+
+Priority of external and internal CSS
+
+Order
+Internal CSS
+External CSS
+
+priority is for External
+
+Order
+External CSS
+Internal CSS
+
+priority is for Internal
+
+If a file have all the three types of styling then order of
+priority is
+Inline>Internal>External
+
+if the css file is present in another folder mention its location 
+from HTML folder...no need of additional symbols
+
+Box model
+margin(default 8 px)
+border
+padding
+content

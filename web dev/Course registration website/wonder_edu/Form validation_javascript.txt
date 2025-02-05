@@ -1,0 +1,23 @@
+    <script>
+        function validateForm() {
+            var name = document.f1.user_name.value;
+            var email = document.f1.email.value;
+            var mobile = document.f1.number.value;
+            if (name == "" && email == "" && mobile == "") {
+                alert("Fill the form");
+                return false;
+            }
+            var validateEmail = &#39;[a - z0 - 9] +@[a - z]+\.[a - z]{ 2, 3 }&#39;
+            if (!email.value.match(validateEmail)) {
+                alert("Enter a valid email id");
+                email.focus();
+                return false;
+            }
+            if (mobile.length < 10 || mobile.length > 10) {
+                alert("Enter a valid mobile number");
+                mobile.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>

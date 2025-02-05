@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lines{
+            font-size: 12px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .importanttext{
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        /* Order of definition in style tag matters */
+        /* here font weight and size is being overwritten by .importanttext as it is declared 2nd */
+    </style>
+</head>
+<body>
+    <div class="lines importanttext">Types of automata</div>
+    <!-- order of giving class name doesn't make a difference -->
+    <div>
+        <ol>
+            <li>Finite automata</li>
+            <li>Push down automata</li>
+            <li>Linear bound automata</li>
+            <li>turing machine</li>
+        </ol>
+    </div>
+</body>
+</html>

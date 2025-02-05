@@ -1,0 +1,27 @@
+h3{
+    font-weight 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#subheading1
+{
+ font-style: italic;
+}
+#subheading2
+{
+    font-weight: bolder;
+}
+div
+{
+  /*border: 1px solid red;*/
+  padding-left: 10px;
+  margin: 30px;
+  float:bottom;
+}
+#left
+{
+ float:bottom;
+}
+#right
+{
+float: right;
+}

@@ -1,0 +1,10 @@
+p{
+    /*we can either use individual attributes or use shorthand
+    as mentioned below*/
+    font: italic small-caps bolder 28px arial, sans-serif ;
+} 
+
+/*  font:font_style font_variant font_weight font_size font_type(n values seperated by comma)
+
+The n values are the names of all fonts prefered from high to low...if browser can't 
+apply n1 it will go to n2 and go on*/
